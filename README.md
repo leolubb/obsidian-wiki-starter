@@ -1,17 +1,28 @@
 # Obsidian + Claude Code 知識庫模板
 
-Obsidian vault 模板，預裝 17 個插件 + Claude Code 整合（15 個 skills、3 個 agents）。Clone 下來用 Obsidian 打開就能用，搭配 Claude Code 可以用 AI 攝取資料、查詢、自動建頁面。
+Obsidian vault 模板，預裝 13 個社群插件 + Claude Code 整合（15 個 skills、3 個 agents）。複製後用 Obsidian 打開就能用，搭配 Claude Code 可以用 AI 攝取資料、查詢、自動建頁面。
 
 ## 快速開始
 
 ```bash
+# 1. Clone 模板
 git clone https://github.com/leolubb/obsidian-wiki-starter.git
-cd obsidian-wiki-starter
+
+# 2. 複製一份，建立你自己的 vault
+cp -r obsidian-wiki-starter my-wiki
+cd my-wiki
+
+# 3. 初始化你自己的 Git
+rm -rf .git
+git init
+git add -A
+git commit -m "init: 從 obsidian-wiki-starter 模板初始化"
+
+# 4. 推上你自己的 GitHub（可選）
+gh repo create my-wiki --private --source=. --push
 ```
 
-1. 用 Obsidian 打開這個資料夾（Open Folder as Vault）
-2. 設定 → 社群插件 → 關閉安全模式
-3. 開啟 `wiki/START-HERE.md`，照裡面的說明開始
+用 Obsidian 打開 `my-wiki` 資料夾（Open Folder as Vault），開啟 `wiki/START-HERE.md` 照裡面的說明開始。
 
 所有插件已預裝，clone 後直接可用，不需要另外下載。
 
@@ -41,13 +52,12 @@ hooks/                ← Claude Code hooks                [隱藏]
 assets/               ← 架構圖                           [隱藏]
 ```
 
-想在 Obsidian 裡看到它們：設定 → 檔案與連結 → 排除的檔案 → 刪除對應項目。
+想在 Obsidian 裡看到它們：編輯 `.obsidian/app.json`，從 `userIgnoreFilters` 陣列中刪除對應項目。
 
-## 預裝插件（17 個）
+## 預裝社群插件（13 個）
 
 | 插件 | 用途 |
 |------|------|
-| Bases（核心） | 資料庫視圖 |
 | Dataview | 類 SQL 查詢 |
 | Templater | 模板引擎 |
 | QuickAdd | 一鍵建頁面 |
@@ -65,7 +75,7 @@ assets/               ← 架構圖                           [隱藏]
 | Thino | 快速便條 |
 | Tasks | 待辦管理 |
 
-最低需求：**Bases** + **Templater** + **Obsidian Git** 三個就夠用。
+最低需求：**Templater** + **Obsidian Git** 就夠用。
 
 ## 搭配 Claude Code
 

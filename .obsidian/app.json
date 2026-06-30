@@ -1,0 +1,17 @@
+{
+  "userIgnoreFilters": [
+    "agents/",
+    "assets/",
+    "bin/",
+    "commands/",
+    "docs/",
+    "hooks/",
+    "scripts/",
+    "skills/",
+    ".vault-meta/"
+  ],
+  "alwaysUpdateLinks": true,
+  "readableLineLength": true,
+  "showInlineTitle": true,
+  "promptDelete": false
+}

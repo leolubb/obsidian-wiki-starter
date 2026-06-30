@@ -1,0 +1,100 @@
+# ── Obsidian 設定 ──
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace-visual.json
+.obsidian/plugins/*/data.json
+!.obsidian/plugins/thino/data.json
+
+# ── 原始資料（私有，不進 repo）──
+.raw/*
+!.raw/.gitkeep
+
+# ── Obsidian 運行時產物 ──
+.smart-connections/
+.obsidian-git-data
+.trash/
+
+# ── 系統 ──
+.DS_Store
+Thumbs.db
+
+# ── IDE / 編輯器 ──
+.cursor/
+.windsurf/
+
+# ── 語言運行時 ──
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+
+# ── 密鑰與憑證（防禦性排除）──
+.env
+.env.local
+*.local.md
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+credentials*
+secrets.y*ml
+auth.json
+
+# ── Obsidian 臨時檔案 ──
+PROMPT.md
+Welcome.md
+*.tmp.*
+Obsidian vault*
+Untitled.canvas
+Untitled *.canvas
+Untitled.base
+
+# ── 日記（Calendar 插件產生）──
+????-??-??.md
+
+# ── 大型媒體 ──
+*.mkv
+*.mp4
+*.mov
+*.avi
+
+# ── Excalidraw 個人繪圖 ──
+Excalidraw/
+
+# ── Codex CLI ──
+.codex
+
+# ── Vault 運行時（DragonScale）──
+.vault-meta/.address.lock
+.vault-meta/.tiling.lock
+.vault-meta/tiling-cache.json
+.vault-meta/tiling-cache.*.tmp
+.vault-meta/.wiki-lock.meta
+.vault-meta/.bm25.lock
+.vault-meta/.embed-cache.lock
+.vault-meta/locks/*
+!.vault-meta/locks/.gitkeep
+.vault-meta/chunks/
+.vault-meta/bm25/
+.vault-meta/embed-cache.json
+.vault-meta/embed-cache.*.tmp
+.vault-meta/transport.json
+.vault-meta/transport.*.tmp
+.vault-meta/hook.log
+.vault-meta/mode.json
+.vault-meta/mode.*.tmp
+
+# ── Smart Environment ──
+.smart-env
+
+# ── Claude Code ──
+.claude/worktrees/
+.claudian/
+
+# ── 測試 ──
+TEST.md

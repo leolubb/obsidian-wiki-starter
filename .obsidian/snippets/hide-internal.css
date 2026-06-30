@@ -1,0 +1,33 @@
+/* Hide claude-obsidian internal folders from file explorer */
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="agents"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="assets"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="bin"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="commands"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="docs"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="hooks"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="scripts"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="skills"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path="tests"]),
+.tree-item.nav-folder:has(> .nav-folder-title[data-path=".vault-meta"]) {
+  display: none !important;
+}
+
+/* Hide claude-obsidian internal files from file explorer */
+.tree-item.nav-file:has(> .nav-file-title[data-path="AGENTS.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="ATTRIBUTION.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="CHANGELOG.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="CLAUDE.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="CITATION.cff"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="CODE_OF_CONDUCT.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="CODEOWNERS"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="CONTRIBUTING.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="GEMINI.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="LICENSE"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="Makefile"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="PRIVACY.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="README.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="SECURITY.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="WIKI.md"]),
+.tree-item.nav-file:has(> .nav-file-title[data-path="Welcome.md"]) {
+  display: none !important;
+}
